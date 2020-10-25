@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'SevenOneEight-Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SevenOneEight-Black'), url('../fonts/SevenOneEight-Black.ttf')
+}
+
+@font-face {
+    font-family: 'SevenOneEight-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SevenOneEight-Book'), url('../fonts/SevenOneEight-Book.ttf')
+}
+
+@font-face {
+    font-family: 'SevenOneEight-ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SevenOneEight-ExtraBold'), url('../fonts/SevenOneEight-ExtraBold.ttf')
+}
+
+@font-face {
+    font-family: 'SevenOneEight-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SevenOneEight-Light'), url('../fonts/SevenOneEight-Light.ttf')
+}
+
+@font-face {
+    font-family: 'SevenOneEight-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SevenOneEight-Medium'), url('../fonts/SevenOneEight-Medium.ttf')
+}
+
+body{
+    background : #efefef;
+}
+
+h1{
+    color:red;
+    font-family: "SevenOneEight-Medium";
+}
+
+h2 {
+    font-family: 'SevenOneEight-Book';
+    font-size: 34px;
+}
+
+h3{
+    font-family: 'SevenOneEight-Book';
+    font-size:18px;
+}
+
+h4{
+    font-family: 'SevenOneEight-ExtraBold';
+    font-size:18px;
+    font-weight: 600;
+}
+
+.wrap {
+    margin-right:auto;
+    margin-left:auto;
+    max-width:75vw;
+}
+
+.pastille.noir{
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: "SevenOneEight-Light";
+    font-size: 10px;
+    align-self: center;
+    padding: 3px;
+}
+
+.pastille.or{
+    background: #bd9c6a;
+    color: white;
+    text-transform: uppercase;
+    font-family: "SevenOneEight-Light";
+    font-size: 10px;
+    align-self: center;
+    padding: 3px;
+}
+
+.bouton{
+    background-image: url("../images/Chevron onglet filtre.png");
+    height: 40px;
+    width: 40px;
+    background-color: #e23022;
+    background-repeat: no-repeat;
+    background-position:  40% 40%;
+    transform: rotate(180deg);
+    background-size: 14px 25px;
+}
+
+.card {
+    border-radius: 7px;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.text-image{
+    font-family: 'SevenOneEight-ExtraBold';
+}
+
+.text-pays{
+    font-family: 'SevenOneEight-Light';
+    font-size: 18px;
+}
+
+.text-fin{
+    font-family:'SevenOneEight-Light';
+}
+
+.text-etape{
+    font-family: 'SevenOneEight-Black';
+    font-size: 72px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 90px;
+}
+
+.text-red {
+    color:red;
+}
+
+.text-etape-medium{
+    font-family: 'SevenOneEight-Medium';
+    font-size:18px;
+}
+
+.text-etape-bold{
+    font-family: 'SevenOneEight-Black';
+    font-size:18px;
+}
