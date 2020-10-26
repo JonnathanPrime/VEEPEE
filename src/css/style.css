@@ -84,8 +84,16 @@ h4{
     padding: 3px;
 }
 
+.vertical {
+    margin-top: -3%;
+    margin-left: 50.5%;
+    border-left: 4px solid black;
+    height: 50.50px;
+    display: inline-block;
+    }
+
 .bouton{
-    background-image: url("../images/Chevron onglet filtre.png");
+    background-image: url("../images/Random filtre.png");
     height: 40px;
     width: 40px;
     background-color: #e23022;
@@ -93,6 +101,15 @@ h4{
     background-position:  40% 40%;
     transform: rotate(180deg);
     background-size: 14px 25px;
+}
+
+.bouton1{
+    height: 40px;
+    width: 40px;
+    background-color: #e23022;
+    background-position:  40% 40%;
+    background-size: 14px 25px;
+    margin-top: -14px;
 }
 
 .card {
