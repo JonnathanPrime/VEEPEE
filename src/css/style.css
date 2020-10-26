@@ -61,7 +61,7 @@ h4{
 .wrap {
     margin-right:auto;
     margin-left:auto;
-    max-width:75vw;
+    max-width:80vw;
 }
 
 .pastille.noir{
@@ -86,7 +86,7 @@ h4{
 
 .vertical {
     margin-top: -3%;
-    margin-left: 50.5%;
+    margin-left: 50.3%;
     border-left: 4px solid black;
     height: 50.50px;
     display: inline-block;
@@ -154,4 +154,13 @@ h4{
 .text-etape-bold{
     font-family: 'SevenOneEight-Black';
     font-size:18px;
+}
+.carousel-control-prev, .carousel-control-next{
+    display: table-cell;
+}
+.carousel-control-prev{
+    padding-top: 30%;
+}
+.monospace {
+  font-family: serif;
 }

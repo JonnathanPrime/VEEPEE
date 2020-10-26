@@ -13,7 +13,7 @@
     <div class="wrap">
         <div class="row mt-3">
             <div class="col-12">
-                <h1 class="text-center pb-0 text-uppercase">Découvrez les offres du moment</h1>
+                <h1 class="text-center pb-0 text-uppercase monospace">Découvrez les offres du moment</h1>
             </div>
             <div class="col-12">
                 <h2 class="text-center text-uppercase">Vol + Hôtel jusqu'à -70%</h2>
@@ -47,35 +47,43 @@
             <div class="col-md-4">
                 <div class="card w-100">
                     <div id="Slide1" class="carousel slide" data-ride="carousel">
-                        <div class="card">
+                        <div class="card carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div style="position:relative;">
                                         <img class="card-img-top d-block w-100" src="images/LAGUNA_BEACH.png" alt="Card image cap">
-                                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
+                                        <p id="prix" class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;"></p>
                                     </div>
                                 </div>
                                 <div class="carousel-item ">
                                     <div style="position:relative;">
                                         <img class="card-img-top d-block w-100" src="images/STHALA_MARC_PATRA.png" alt="Card image cap">
-                                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
+                                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Dès 67€</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item ">
                                     <div style="position:relative;">
                                         <img class="card-img-top d-block w-100" src="images/ECHAPEE_SRI_LANKAISE.png" alt="Card image cap">
-                                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
+                                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Dès 67€</p>
                                     </div>
                                 </div>
+                                <a class="carousel-control-prev col-md-5" href="#Slide1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next col-md-5" href="#Slide1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-body p-2">
                         <div class="row no-gutters">
                             <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Emirates Arabes Unis — </b>Dubaï</p></div>
+                                <div class="d-inline"><p class="mb-0 text-pays" id="ville"><b id="pays"> - </b></p></div>
                                 <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Hyatt Regency Creek</p>
+                                    <p class="mb-1 mr-2 text-fin" id="label"></p>
                                     <div class="mb-1">
                                         <span class="fa fa-star checked" style="font-size: 14px;"></span>
                                         <span class="fa fa-star checked" style="font-size: 14px;"></span>
@@ -85,12 +93,12 @@
                                     </div>
                                 </div>
                                 <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">Premium</div>
-                                    <div class="pastille or">Surclassement offert</div>
+                                    <div class="pastille noir mr-3" id="tag1"></div>
+                                    <div class="pastille or" id="tag2"></div>
                                 </div>
                             </div>
                             <div class="col-2 align-self-center">
-                                <div class="bouton carousel-control-next" href="#Slide1" role="button" data-slide="next"></div>
+                                <div class="bouton" href="#Slide1" role="button"></div>
                             </div>
                         </div>
                     </div>
@@ -119,6 +127,14 @@
                                         <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
                                     </div>
                                 </div>
+                                <a class="carousel-control-prev col-md-5" href="#Slide2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next col-md-5" href="#Slide2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="col-2 align-self-center">
-                                <div class="bouton carousel-control-next" href="#Slide2" role="button" data-slide="next"></div>
+                                <div class="bouton" href="#Slide2" role="button" ></div>
                             </div>
                         </div>
                     </div>
@@ -169,6 +185,14 @@
                                         <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
                                     </div>
                                 </div>
+                                <a class="carousel-control-prev col-md-5" href="#Slide3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next col-md-5" href="#Slide3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -191,191 +215,7 @@
                                 </div>
                             </div>
                             <div class="col-2 align-self-center">
-                                <div class="bouton carousel-control-next" href="#Slide3" role="button" data-slide="next"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card w-100">
-                    <div style="position:relative;">
-                        <img class="card-img-top" src="images/JAPON.jpg" alt="Card image cap">
-                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
-                    </div>
-                    <div class="card-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Japon — </b>Tokyo</p></div>
-                                <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Grand Arc Hanzomon</p>
-                                    <div class="mb-1">
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">City Break</div>
-                                    <div class="pastille or">Insolite</div>
-                                </div>
-                            </div>
-                            <div class="col-2 align-self-center">
-                                <div class="bouton"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card w-100">
-                    <div style="position:relative;">
-                        <img class="card-img-top" src="images/JAPON.jpg" alt="Card image cap">
-                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
-                    </div>
-                    <div class="card-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Japon — </b>Tokyo</p></div>
-                                <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Grand Arc Hanzomon</p>
-                                    <div class="mb-1">
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">City Break</div>
-                                    <div class="pastille or">Insolite</div>
-                                </div>
-                            </div>
-                            <div class="col-2 align-self-center">
-                                <div class="bouton"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card w-100">
-                    <div style="position:relative;">
-                        <img class="card-img-top" src="images/JAPON.jpg" alt="Card image cap">
-                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
-                    </div>
-                    <div class="card-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Japon — </b>Tokyo</p></div>
-                                <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Grand Arc Hanzomon</p>
-                                    <div class="mb-1">
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">City Break</div>
-                                    <div class="pastille or">Insolite</div>
-                                </div>
-                            </div>
-                            <div class="col-2 align-self-center">
-                                <div class="bouton"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card w-100">
-                    <div style="position:relative;">
-                        <img class="card-img-top" src="images/JAPON.jpg" alt="Card image cap">
-                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
-                    </div>
-                    <div class="card-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Japon — </b>Tokyo</p></div>
-                                <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Grand Arc Hanzomon</p>
-                                    <div class="mb-1">
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">City Break</div>
-                                    <div class="pastille or">Insolite</div>
-                                </div>
-                            </div>
-                            <div class="col-2 align-self-center">
-                                <div class="bouton"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card w-100">
-                    <div style="position:relative;">
-                        <img class="card-img-top" src="images/JAPON.jpg" alt="Card image cap">
-                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
-                    </div>
-                    <div class="card-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Japon — </b>Tokyo</p></div>
-                                <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Grand Arc Hanzomon</p>
-                                    <div class="mb-1">
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">City Break</div>
-                                    <div class="pastille or">Insolite</div>
-                                </div>
-                            </div>
-                            <div class="col-2 align-self-center">
-                                <div class="bouton"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card w-100">
-                    <div style="position:relative;">
-                        <img class="card-img-top" src="images/JAPON.jpg" alt="Card image cap">
-                        <p class="text-white text-image text-uppercase mb-2 mr-2" style="position:absolute; bottom:0px; right:0px;z-index:9;">Jusqu'à -70%</p>
-                    </div>
-                    <div class="card-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-10">
-                                <div class="d-inline"><p class="mb-0 text-pays"><b>Japon — </b>Tokyo</p></div>
-                                <div class="row no-gutters align-items-baseline">
-                                    <p class="mb-1 mr-2 text-fin">Grand Arc Hanzomon</p>
-                                    <div class="mb-1">
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                        <span class="fa fa-star checked" style="font-size: 14px;"></span>
-                                    </div>
-                                </div>
-                                <div class="row no-gutters">
-                                    <div class="pastille noir mr-3">City Break</div>
-                                    <div class="pastille or">Insolite</div>
-                                </div>
-                            </div>
-                            <div class="col-2 align-self-center">
-                                <div class="bouton"></div>
+                                <div class="bouton " href="#Slide3" role="button"></div>
                             </div>
                         </div>
                     </div>
