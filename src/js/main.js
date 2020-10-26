@@ -3,11 +3,14 @@ var obj = JSON.parse(JSON.stringify(text));
 console.log(text);
 
 
-document.getElementById("pays").innerHTML =
-obj.destinations[0].country;
+//document.getElementById("pays").innerHTML =
+//obj.destinations[0].country;
 
-document.getElementById("ville").innerHTML =
-obj.destinations[0].place;
+//document.getElementById("ville").innerHTML =
+//obj.destinations[0].place;
+
+document.getElementById("destination").innerHTML =
+obj.destinations[0].country + " - " + obj.destinations[0].place;
 
 document.getElementById("prix").innerHTML =
 obj.destinations[0].upto;
